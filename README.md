@@ -47,6 +47,8 @@ pip install -r requirements.txt
 
  
 ### Export the  environment variable
+Note: create your own database change MONGODB_URl ,otherwise it is not working. 
+
 ```bash
 
 
@@ -59,7 +61,6 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ```
 
 
-Note: create your own database change url ,otherwise it is not working. 
 
 
 
