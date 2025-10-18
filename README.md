@@ -27,3 +27,8 @@ conda activate mlp
   ```bash 
 pip install -r requirements.txt
  ```
+
+ ## Database used :
+
+ - https://account.mongodb.com/account/login
+ 
