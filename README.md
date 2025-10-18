@@ -52,7 +52,7 @@ Note: create your own database change MONGODB_URl ,otherwise it is not working.
 ```bash
 
 
-export MONGODB_URL="mongodb+srv://username:pass@cluster0.3lowor9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+export MONGODB_URL="mongodb+srv://userayhan:passhellow@cluster0.3lowor9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
