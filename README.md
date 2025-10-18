@@ -58,6 +58,8 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 ```
 
+###Note: create your own database change url ,otherwise it is not working. 
+
 
 
 
