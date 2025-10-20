@@ -1,38 +1,27 @@
-# Machine-Learning-Project
+# End-to-End-Machine-Learning-Project-Implementation
 
 
 ### Tool you have to install:-
 
- - Anaconda: https://www.anaconda.com/
- - Vs code: https://code.visualstudio.com/download
- - Git: https://git-scm.com/
+1. Anaconda: https://www.anaconda.com/
+2. Vs code: https://code.visualstudio.com/download
+3. Git: https://git-scm.com/
 
-### For flowchart
+### For flowchart 
 
- - https://whimsical.com/a
+- https://whimsical.com/a
 
- ## How to run?
 
- ```bash 
- git clone https://github.com/rayhanhcse/Machine-Learning-Project
- ```
+### Database used:
 
-  ```bash 
- conda create -n mlp python=3.8 -y
- ```
+- MongoDB: https://account.mongodb.com/account/login
 
-  ```bash 
-conda activate mlp
- ```
-  ```bash 
-pip install -r requirements.txt
- ```
 
- ## Database used :
+### Data link:
 
- - https://account.mongodb.com/account/login
+- Kaggle: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 
- 
+
 
 ## Workflow
 
@@ -45,22 +34,38 @@ pip install -r requirements.txt
 
 
 
- 
-### Export the  environment variable
-Note: create your own database change MONGODB_URl ,otherwise it is not working. 
 
+## How to run?
+
+```bash
+git clone https://github.com/entbappy/End-to-End-Machine-Learning-Project-Implementation
+```
+
+```bash
+conda create -n visa python=3.8 -y
+```
+
+```bash
+conda activate visa
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+
+
+### Export the  environment variable
 ```bash
 
 
-export MONGODB_URL="ur link pase here"
+export MONGODB_URL="mongodb+srv://entbappy:entbappy@cluster0.3lowor9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 ```
-
-
 
 
 
