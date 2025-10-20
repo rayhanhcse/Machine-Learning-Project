@@ -1,2 +1,3 @@
-from us_visa.logger import logging
-logging.info("Welcome to Rayhan World")
+import os
+mongodburl=os.getenv("MONGODB_URL")
+print(mongodburl)
