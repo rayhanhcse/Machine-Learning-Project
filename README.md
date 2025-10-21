@@ -38,7 +38,7 @@
 ## How to run?
 
 ```bash
-git clone https://github.com/entbappy/End-to-End-Machine-Learning-Project-Implementation
+git clone https://github.com/rayhanhcse/Machine-Learning-Project
 ```
 
 ```bash
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ```bash
 
 
-export MONGODB_URL="mongodb+srv://entbappy:entbappy@cluster0.3lowor9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+export MONGODB_URL=""
 
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
