@@ -1,4 +1,4 @@
-# End-to-End-Machine-Learning-Project-Implementation
+# Machine-Learning-Project
 
 
 ### Tool you have to install:-
@@ -37,6 +37,7 @@
 
 ## How to run?
 
+
 ```bash
 git clone https://github.com/rayhanhcse/Machine-Learning-Project
 ```
@@ -56,6 +57,7 @@ pip install -r requirements.txt
 
 
 ### Export the  environment variable
+Note: use custom url===>
 ```bash
 
 
