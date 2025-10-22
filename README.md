@@ -1,4 +1,4 @@
-# End-to-End-Machine-Learning-Project-Implementation
+# Machine-Learning-Project
 
 
 ### Tool you have to install:-
@@ -56,6 +56,7 @@ pip install -r requirements.txt
 
 
 ### Export the  environment variable
+# Note : Add custom url 
 ```bash
 
 
