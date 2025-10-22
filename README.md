@@ -57,11 +57,8 @@ pip install -r requirements.txt
 
 
 ### Export the  environment variable
-<<<<<<< HEAD
-Note: use custom url===>
-=======
-# Note : Add custom url 
->>>>>>> 0776ca4cd64b4125f5d70ba440433e20f029ef61
+   Note: use custom url===>
+
 ```bash
 
 
