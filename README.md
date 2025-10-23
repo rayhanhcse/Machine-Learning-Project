@@ -195,7 +195,7 @@ newgrp docker
 <p align="center">
   <img src="https://media.giphy.com/media/l0HlPjez2i0gTSmFe/giphy.gif" width="100" alt="Deployment GIF"/>
 </p>
-```
+
 
 ---
 
