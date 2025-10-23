@@ -1,5 +1,33 @@
 # Machine-Learning-Project
 
+## 🛂 US Visa Prediction Project
+### 📘 Overview
+
+The US Visa Prediction Project aims to predict the approval status of US visa applications using Machine Learning techniques.
+It analyzes historical visa application data to find key factors that influence approval decisions.
+
+### 🎯 Project Objective
+
+Predict whether a US visa application will be approved or denied.
+
+Identify important factors that impact visa approval.
+
+Help applicants or organizations understand visa trends.
+
+### 🧠 Key Features
+
+1. Data Cleaning and Preprocessing
+
+2. Exploratory Data Analysis (EDA)
+
+3. Feature Engineering
+
+4. Machine Learning Model Training
+
+4. Model Evaluation and Visualization
+
+5. Web/App Interface for Prediction (optional)
+
 
 ### Tool you have to install:-
 
