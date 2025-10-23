@@ -1,171 +1,204 @@
-# Machine-Learning-Project
 
-## 🛂 US Visa Prediction Project
-### 📘 Overview
+<h1 align="center">
+  <span style="background: linear-gradient(to right, #1e3c72, #2a5298); -webkit-background-clip: text; color: transparent;">
+    🛂 US Visa Prediction Project
+  </span>
+</h1>
 
-The US Visa Prediction Project aims to predict the approval status of US visa applications using Machine Learning techniques.
-It analyzes historical visa application data to find key factors that influence approval decisions.
+<p align="center">
+  <strong>Predict US Visa application approval using Machine Learning & deploy via AWS CI/CD</strong>
+</p>
 
-### 🎯 Project Objective
+<p align="center">
+  <a href="https://github.com/rayhanhcse/Machine-Learning-Project">
+    <img src="https://img.shields.io/badge/GitHub-rayhanhcse-181717?style=for-the-badge&logo=github" alt="GitHub Badge"/>
+  </a>
+  <a href="mailto:rayhanhcse@gmail.com">
+    <img src="https://img.shields.io/badge/Email-rayhanhcse@gmail.com-D14836?style=for-the-badge&logo=gmail" alt="Email Badge"/>
+  </a>
+  <a href="https://linkedin.com/in/rayhanchse">
+    <img src="https://img.shields.io/badge/LinkedIn-rayhanchse-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn Badge"/>
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.8-3776AB?style=for-the-badge&logo=python" alt="Python Badge"/>
+  <img src="https://img.shields.io/badge/Anaconda-202020?style=for-the-badge&logo=anaconda" alt="Anaconda Badge"/>
+</p>
 
-Predict whether a US visa application will be approved or denied.
+---
 
-Identify important factors that impact visa approval.
+## 📘 Overview
+The **US Visa Prediction Project** predicts whether a US visa application will be **approved** or **denied** using **Machine Learning** techniques.  
+It analyzes historical visa data to identify key factors influencing visa approval decisions.
 
-Help applicants or organizations understand visa trends.
+---
 
-### 🧠 Key Features
+## 🎯 Project Objectives
+- Predict approval/denial of US visa applications  
+- Identify important features impacting visa approval  
+- Provide insights for applicants and organizations  
 
-1. Data Cleaning and Preprocessing
+---
 
-2. Exploratory Data Analysis (EDA)
+## 🧩 Key Features
+1. Data Cleaning & Preprocessing  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. Machine Learning Model Training  
+5. Model Evaluation & Visualization  
+6. Web/App Interface for Prediction (optional)  
 
-3. Feature Engineering
+---
 
-4. Machine Learning Model Training
+## 🛠 Tools You Need
+| Tool | Link |
+|------|------|
+| Anaconda | [Download](https://www.anaconda.com/) |
+| VS Code | [Download](https://code.visualstudio.com/download) |
+| Git | [Download](https://git-scm.com/) |
 
-4. Model Evaluation and Visualization
+---
 
-5. Web/App Interface for Prediction (optional)
+## 🗂 Database Used
+- **MongoDB**: [Login](https://account.mongodb.com/account/login)  
 
+---
 
-### Tool you have to install:-
+## 📁 Dataset
+- **Kaggle Dataset:** [EasyVisa Dataset](https://www.kaggle.com/datasets/moro23/easyvisa-dataset)  
 
-1. Anaconda: https://www.anaconda.com/
-2. Vs code: https://code.visualstudio.com/download
-3. Git: https://git-scm.com/
+---
 
-### For flowchart 
-
-- https://whimsical.com/a
-
-
-### Database used:
-
-- MongoDB: https://account.mongodb.com/account/login
-
-
-### Data link:
-
-- Kaggle: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
-
-
-
-## Workflow
+## 🚀 Project Workflow
+```
 
 1. constant
 2. config_entity
 3. artifact_entity
-4. conponent
+4. component
 5. pipeline
 6. app.py / demo.py
 
+````
 
+---
 
+## ⚡ How to Run
 
-## How to run?
-
-
+### Clone Repository
 ```bash
-git clone https://github.com/rayhanhcse/Machine-Learning-Project
-```
+git clone https://github.com/rayhanhcse/Machine-Learning-Project.git
+cd Machine-Learning-Project
+````
+
+### Create & Activate Environment
 
 ```bash
 conda create -n visa python=3.8 -y
-```
-
-```bash
 conda activate visa
 ```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
+### Export Environment Variables
 
-
-### Export the  environment variable
-   Note: use custom url===>
+> Replace with your actual keys/URLs
 
 ```bash
-
-
-export MONGODB_URL=""
-
-export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
-
-export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
-
+export MONGODB_URL="your_mongodb_url"
+export AWS_ACCESS_KEY_ID="your_aws_access_key_id"
+export AWS_SECRET_ACCESS_KEY="your_aws_secret_access_key"
 ```
 
+---
+
+## ☁️ AWS CI/CD Deployment Steps
+
+### 1️⃣ Login to AWS Console
+
+### 2️⃣ Create IAM User for Deployment
+
+* Permissions required:
+
+  * **EC2 Full Access**
+  * **ECR Full Access**
+
+**Deployment Steps:**
+
+1. Build Docker image of source code
+2. Push Docker image to **ECR**
+3. Launch **EC2** instance
+4. Pull Docker image from **ECR**
+5. Run Docker image on EC2
+
+---
+
+### 3️⃣ Create ECR Repository
+
+* Save URI: `315865595366.dkr.ecr.us-east-1.amazonaws.com/usvisarepo`
+
+---
+
+### 4️⃣ Launch EC2 Instance (Ubuntu)
+
+---
+
+### 5️⃣ Install Docker on EC2
+
+```bash
+sudo apt-get update -y
+sudo apt-get upgrade -y
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker
+```
+
+---
+
+### 6️⃣ Configure EC2 as Self-Hosted GitHub Runner
+
+* Go to GitHub → **Settings → Actions → Runners → New self-hosted runner**
+* Choose OS and follow commands
+
+---
+
+### 7️⃣ Setup GitHub Secrets
+
+| Secret Name           | Description                  |
+| --------------------- | ---------------------------- |
+| AWS_ACCESS_KEY_ID     | AWS Access Key               |
+| AWS_SECRET_ACCESS_KEY | AWS Secret Key               |
+| AWS_DEFAULT_REGION    | AWS Region (e.g., us-east-1) |
+| ECR_REPO              | ECR Repository URI           |
+| MONGODB_URL           | MongoDB Connection URL       |
+
+---
+
+### 🌐 Flowchart Tool
+
+* [Whimsical](https://whimsical.com/a)
+
+---
+
+### 👨‍💻 Author
+
+**Rayhan Hussain**
+📧 Email: [rayhanhcse@gmail.com](mailto:rayhanhcse@gmail.com)
+🌐 GitHub: [rayhanhcse](https://github.com/rayhanhcse)
+💼 LinkedIn: [rayhanchse](https://linkedin.com/in/rayhanchse)
+
+---
+
+<p align="center">
+  <img src="https://media.giphy.com/media/l0HlPjez2i0gTSmFe/giphy.gif" width="100" alt="Deployment GIF"/>
+</p>
+```
+
+---
 
 
 
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
-
-	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-    - Save the URI: 315865595366.dkr.ecr.us-east-1.amazonaws.com/usvisarepo
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-
-# 7. Setup github secrets:
-
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
-   - AWS_DEFAULT_REGION
-   - ECR_REPO
-   - MONGODB_URL
+এটি GitHub এ paste করলে full **modern professional look** পাবে।
